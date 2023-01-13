@@ -7,9 +7,167 @@
 
 .main-container{
     display: flex;
-    border: 1px solid black;
-    margin: 5% 10%;
-    height: 60vh;
+    margin: 5% 12%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.container-of-things{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 5% 5%;
+    width: 100%;
+}
+
+.menu-container{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    
+}
+
+.markets-container{
+    height: 100%;
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.markets-btn{
+    height: 80%;
+    border:none;
+    background-color: white;
+    margin-left: 6%;
+    border-radius: 6px;
+    padding: 0% 3%;
+}
+
+.markets-btn:hover{
+    background-color: #849FFF;
+    color: white;
+    transition: ease .3s;
+    border-radius: 6px;
+
+}
+
+.markets-btn:focus{
+    background-color: #849FFF;
+    color: white;
+    transition: ease .3s;
+    border-radius: 6px;
+}
+
+.search-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.search-box{
+    width: 60%;
+    height: 80%;
+    outline: none;
+    border:none;
+    border-bottom:3px solid #849FFF;
+    padding-left: 1%;
+    font-size: large;
+}
+
+.search-btn{
+    border:none;
+    background-color: #849FFF;
+    color: white;
+    width: 4rem;
+    height: 80%;
+    border-radius: 6px;
+    margin-left: 3%;
 }
 
 
+.display-area{
+   margin-top: 1%;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   /*justify-content: space-around;*/
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   overflow: scroll;
+}
+
+.display-card{
+    display: flex;
+    height: 30%;
+    width: 25%;
+    flex-direction: column;
+    margin: 1%;
+    align-items: center;
+    justify-self: center;
+    border-radius: 6px;
+    background-color: #FBFCFF;
+    color:#151b32;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.team-1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.team-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.name-odds-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.team-1{
+    margin-bottom: 5%;
+}
+
+.bet-price{
+    display: flex;
+    background-color: #849FFF;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    width: 20%;
+    height: 2rem;
+}
+
+
+.team-name{
+    display: flex;
+    height: 2rem;
+    /*justify-content: center;*/
+    align-items: center
+}
+
+.underline{
+    border: #849FFF 2px solid;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    
+}
