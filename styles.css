@@ -160,7 +160,7 @@
    display: flex;
    flex-direction: row;
    /*justify-content: space-around;*/
-   
+   min-height: 0;
    align-items: center;
    flex-wrap: wrap;
    height: 50vh;
@@ -237,7 +237,9 @@
 
 
 
-
+.odds-container{
+    min-height: 0;
+}
 
 
 .new-display-card{
@@ -305,6 +307,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: rgb(63, 63, 160);
+    min-height: 0;
 }
 
 .fanduel-container{
@@ -332,7 +335,7 @@
 @media all and (max-width: 500px){
     .new-display-card{
         width: 90%;
-        height: 10rem;
+        height: 12rem;
         margin-bottom: 10%;
         display: flex;
         flex-direction: column;
@@ -341,6 +344,81 @@
         background-color: #222533;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         font-size: 10px;
+    }
+
+    .odds-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(63, 63, 160);
+        min-height: 0;
+    }
+
+    .display-area{
+        margin-top: 1%;
+        display: flex;
+        flex-direction: row;
+        /*justify-content: space-around;*/
+        min-height: 0;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 50vh;
+        width: 100%;
+        min-height: 0;
+     }
+
+     .search-div{
+        display: flex;
+        width: 80%;
+        margin-bottom: 3%;
+        justify-content: center;
+        outline: none;
+        margin-top:5%;
+    }
+    
+    
+    .search-input{
+        height: 3rem;
+        width: 22rem;
+        padding-left: 3%;
+        background-color: white;
+        
+    }
+
+    .search-odds-btn{
+        width: 7rem;
+        height: 3rem;
+        background-color: white;
+        border:none;
+        padding: 1%;
+
+
+    }
+
+    .logo{
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+
+    .top-main{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(63, 63, 160);
+        color:white;
+        font-size: 5rem;
+    }
+
+    .text-div{
+        margin-top: 7%;
+        margin-bottom: 5%;
+        font-size: 200px;
+    }
+
+    .main-text{
+        font-size: 2.4rem;
     }
 
 }

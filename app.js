@@ -13,9 +13,6 @@ const oddsContainer = document.querySelector(".odds-container")
 
 let sportsName = searchInput.value
 
-const selectMenu = document.querySelector(".bet-type")
-const selectValue = selectMenu.value;
-const text = selectMenu.options[selectMenu.selectedIndex].text;
 //const text = selectMenu.options[selectMenu.selectedIndex].text;
 
 
@@ -256,25 +253,25 @@ function getNBAOddsMoneyLine(){
 
     function displayBetsNew(){
         let sportsValue = searchInput.value
-        let selectValue = selectMenu.value;
-        if(["NFL", "National Football League", 'Football'].includes(sportsValue) && selectValue === 'Moneyline'){
+        
+        if(["NFL", "National Football League", 'Football'].includes(sportsValue)){
             sportsValue = 'americanfootball_nfl'
             console.log('this is the new sports value: ' + sportsValue)
            
-        }else if(["NBA", "National Basketball Association", 'Basketball'].includes(sportsValue) && selectValue === 'Moneyline'){
+        }else if(["NBA", "National Basketball Association", 'Basketball'].includes(sportsValue)){
             sportsValue = "basketball_nba"
             console.log('this is the new sports value: '+ sportsValue)
             
-        }else if(["Soccer", "EPL", 'Premier League', 'English Premier Leage', 'Barclays', 'Barclays Premier League'].includes(sportsValue) && selectValue === 'Moneyline'){
+        }else if(["Soccer", "EPL", 'Premier League', 'English Premier Leage', 'Barclays', 'Barclays Premier League'].includes(sportsValue)){
             console.log("soccer_epl")
             sportsValue = "soccer_epl"
             console.log('this is the new sports value: '+ sportsValue)
 
-        }else if(["College Basketball", "CBB"].includes(sportsValue) && selectValue === 'Moneyline'){
+        }else if(["College Basketball", "CBB"].includes(sportsValue) ){
             console.log("basketball_ncaab")
             sportsValue = "basketball_ncaab"
             console.log('this is the new sports value: '+ sportsValue)
-        }else if(["Hockey", "NHL"].includes(sportsValue) && selectValue === 'Moneyline'){
+        }else if(["Hockey", "NHL"].includes(sportsValue) && selectValue){
             console.log("icehockey_nhl")
             sportsValue = "icehockey_nhl"
             console.log('this is the new sports value: '+ sportsValue)
