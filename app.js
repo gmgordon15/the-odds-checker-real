@@ -351,7 +351,7 @@ function getNBAOddsMoneyLine(){
 
                 return `
                 <div class="draft-kings-container">
-                <h1>${book1title}</h1>
+                <h1 class="Sports-Book-Title">${book1title}</h1>
                <div class="new-display-card">
                    <div class="big-info-container">
                      <div class="home-team-container">
@@ -419,7 +419,7 @@ function getNBAOddsMoneyLine(){
                 </div>
             
                 <div class="fanduel-container">
-                <h1>${book2title}</h1>
+                <h1 class="Sports-Book-Title">${book2title}</h1>
                     <div class="new-display-card">
                         <div class="big-info-container">
                           <div class="home-team-container">
@@ -504,7 +504,7 @@ function getNBAOddsMoneyLine(){
 
                 /*return `
                 <div class="draft-kings-container">
-                <h1>${book1title}</h1>
+                <h1 class="Sports-Book-Title">${book1title}</h1>
                <div class="new-display-card">
                    <div class="big-info-container">
                      <div class="home-team-container">
